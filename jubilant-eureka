@@ -1,0 +1,11 @@
+        let collage = Collage(
+            shapes: [.init(elements: [element1],
+                           zPosition: 1,
+                           blendMode: .normal,
+                           blur: .none,
+                           adjustments: .defaultAdjustments,
+                           transforms: .init()),
+    func dispatch(_ action: AppAction) {
+        handleMaskCreation(action)
+        state = reducer.reduce(state, action)
+    }
